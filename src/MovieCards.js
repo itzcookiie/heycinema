@@ -1,10 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const MovieCards = ({ relatedMovies, moviesLoaded }) => {
+const MovieCards = ({ relatedMovies, moviesLoaded, movie }) => {
     return (
         <div>
-            <h1>MovieCards</h1>
+            <h1>{movie.toUpperCase()} MOVIES</h1>
                 <ul>{
                 (moviesLoaded && relatedMovies.length > 0) 
                     && relatedMovies.map((movie,index) => (
