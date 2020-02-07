@@ -1,11 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import Header from './Header'
+import MovieCards from './MovieCards'
+import './App.css'
 
-const App = () => {
+const App = ({ relatedMovies, moviesLoading }) => {
     return (
         <div>
-            <h1>heycinema</h1>
+            <Header />
+            {
+            !(relatedMovies.length > 0)
+            ? !moviesLoading 
+            ? '' 
+            : 'Loading...' 
+            : <MovieCards />}
         </div>
     )
 }
 
-export default App
+const mapStateToProps = state => {
+    return state
+}
+
+export default connect(
+    mapStateToProps
+)(App)

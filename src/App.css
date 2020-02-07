@@ -1,0 +1,35 @@
+:root {
+    --primary: #7FAAE4;
+    --secondary: #834DB7;
+    --tertiary: #34283F;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.header {
+    margin: 0;
+    line-height: 1;
+}
+
+.header--top {
+    color: var(--primary)
+}
+
+.header--bottom {
+    color: var(--secondary)
+}
