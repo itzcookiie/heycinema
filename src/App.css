@@ -19,6 +19,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    color: var(--secondary);
+    background: var(--tertiary)
 }
 
 .header {
@@ -32,4 +34,39 @@ body {
 
 .header--bottom {
     color: var(--secondary)
+}
+
+.movie-title {
+    color: var(--primary)
+}
+
+.movie-list {
+    list-style: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--secondary);
+}
+
+table {
+    /* width: 350px;
+    height: 200px; */
+}
+
+.movie-cards {
+    display: flex;
+}
+
+.movie-card-container {
+    margin-right: 50px;
+}
+
+img {
+    /* width: 350px; */
+}
+
+p {
+    margin: 0
 }
