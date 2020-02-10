@@ -5,7 +5,7 @@ import MovieCard from './MovieCard'
 const MovieCards = ({ relatedMovies, moviesLoaded, movie }) => {
     return (
         <div>
-            <h1>{movie.toUpperCase()} MOVIES</h1>
+            <h1 class="movie-name">{movie.toUpperCase()} MOVIES</h1>
                 <ul className="movie-list">{
                 (moviesLoaded && relatedMovies.length > 0) 
                     && <MovieCard movies={relatedMovies}/>}</ul> 

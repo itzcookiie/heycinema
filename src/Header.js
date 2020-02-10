@@ -4,16 +4,17 @@ import { inputMovie, searchMovie } from './actions'
 
 const Header = ({ inputMovie, searchMovie, errorLoading }) => {
     return (
-        <div>
-            <h1>Header</h1>
-            <div>
+        <div className="heading-bar">
+            <div class="heycinema">
                 <h3 className="header header--top">hey</h3>
                 <h3 className="header header--bottom">cinema</h3>
             </div>
-            <form>
-                <input onInput={inputMovie} type="search"></input>
-                <button onClick={searchMovie}>Search</button>
-            </form>
+            <div className="searchbar">
+                    <form>
+                        <input onInput={inputMovie} type="search"></input>
+                        <button onClick={searchMovie}>Search</button>
+                    </form>
+            </div>
             {errorLoading && 'Error loading movies'}
         </div>
     )

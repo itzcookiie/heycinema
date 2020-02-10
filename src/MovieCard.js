@@ -1,18 +1,18 @@
 import React from 'react'
+import moomins from './moomins.png'
 
 const MovieCard = ({ movies }) => {
     return (
         <div className="movie-cards">
             {movies.map((movie,index) => (
                     <div key={index} className="movie-card-container">
-                        <div >
                         <table>
                             <thead>
                                 <tr>
-                                    <th colspan="2">{movie.Title}</th>
+                                    <th className="table-header" colSpan="2">{movie.Title}</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className="table-body">
                                 <tr>
                                     <td>Rating</td>
                                     <td>
@@ -28,9 +28,9 @@ const MovieCard = ({ movies }) => {
                                 </tr>
                             </tbody>
                         </table>
-                        </div>
                             <img onError={(error) => {
-                                error.target.src="https://www.nationalpetregister.org/assets/img/no-photo.jpg"
+                                error.target.src=`http://localhost:3000/dist/${moomins}`
+                                // error = null
                             }} src={movie.Poster} alt="Cover of the movie" />
                     </div>)
             )}

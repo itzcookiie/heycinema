@@ -4,6 +4,10 @@
     --tertiary: #34283F;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
 h1,
 h2,
 h3,
@@ -15,12 +19,19 @@ h6 {
     font-size: 18px;
 }
 
-body {
+html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
     color: var(--secondary);
     background: var(--tertiary)
+}
+
+.heading-bar {
+    display: flex;
+    justify-content: space-between
 }
 
 .header {
@@ -44,15 +55,17 @@ body {
     list-style: none;
 }
 
+.movie-name {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
 table,
 th,
 td {
+    min-height: 175px;
     border: 1px solid var(--secondary);
-}
-
-table {
-    /* width: 350px;
-    height: 200px; */
 }
 
 .movie-cards {
@@ -60,13 +73,34 @@ table {
 }
 
 .movie-card-container {
-    margin-right: 50px;
+    background: var(--tertiary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 img {
-    /* width: 350px; */
+    max-height: 400px;
+    max-width: auto;
 }
 
 p {
     margin: 0
+}
+
+.table-header {
+    color: var(--primary)
+}
+
+.table-body {
+    color: var(--secondary)
+}
+
+.heycinema {
+    position: fixed;
+}
+
+.searchbar {
+    position: fixed;
+    right: 0;
 }
