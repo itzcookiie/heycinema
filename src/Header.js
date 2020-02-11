@@ -5,7 +5,7 @@ import { inputMovie, searchMovie } from './actions'
 const Header = ({ inputMovie, searchMovie, errorLoading }) => {
     return (
         <div className="heading-bar">
-            <div class="heycinema">
+            <div className="heycinema">
                 <h3 className="header header--top">hey</h3>
                 <h3 className="header header--bottom">cinema</h3>
             </div>

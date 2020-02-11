@@ -65,11 +65,11 @@ table,
 th,
 td {
     min-height: 175px;
-    border: 1px solid var(--secondary);
+    border: 1px solid white;
 }
 
 .movie-cards {
-    display: flex;
+    display: inline-flex;
 }
 
 .movie-card-container {
@@ -77,11 +77,12 @@ td {
     padding: 20px;
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
 }
 
 img {
-    max-height: 400px;
-    max-width: auto;
+    height: 400px;
+    width: 300px;
 }
 
 p {

@@ -1,5 +1,5 @@
 import React from 'react'
-import moomins from './moomins.png'
+import imageNotFound from './image-not-found.png'
 
 const MovieCard = ({ movies }) => {
     return (
@@ -29,7 +29,7 @@ const MovieCard = ({ movies }) => {
                             </tbody>
                         </table>
                             <img onError={(error) => {
-                                error.target.src=`http://localhost:3000/dist/${moomins}`
+                                error.target.src=`http://localhost:3000/dist/${imageNotFound}`
                                 // error = null
                             }} src={movie.Poster} alt="Cover of the movie" />
                     </div>)
