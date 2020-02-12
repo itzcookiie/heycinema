@@ -1,0 +1,13 @@
+.movie-name {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.movie-list {
+    list-style: none;
+}

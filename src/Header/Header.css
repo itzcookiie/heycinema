@@ -1,0 +1,42 @@
+.heycinema {
+    position: fixed;
+}
+
+.searchbar {
+    position: fixed;
+    right: 0;
+}
+
+.form {
+    text-align: end;
+}
+
+.heading-bar {
+    display: flex;
+    justify-content: space-between
+}
+
+.header {
+    margin: 0;
+    line-height: 1;
+}
+
+.header--top {
+    color: var(--primary)
+}
+
+.header--bottom {
+    color: var(--secondary)
+}
+
+.example {
+    text-align: center;
+    border: 5px solid var(--secondary);
+    margin-top: 20px;
+    padding: 10px;
+    border-right: 0;
+}
+
+.example-list {
+    padding: 0;
+}

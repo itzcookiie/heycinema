@@ -1,17 +1,20 @@
 import React from 'react'
-import imageNotFound from './image-not-found.png'
+import imageNotFound from '../image-not-found.png'
+import './MovieCard.css'
 
 const MovieCard = ({ movies }) => {
     return (
         <div className="movie-cards">
             {movies.map((movie,index) => (
                     <div key={index} className="movie-card-container">
-                        <table>
-                            <thead>
+                        <div>
+                        </div>
+                            {/* <thead>
                                 <tr>
                                     <th className="table-header" colSpan="2">{movie.Title}</th>
                                 </tr>
-                            </thead>
+                            </thead> */}
+                            <table>
                             <tbody className="table-body">
                                 <tr>
                                     <td>Rating</td>
@@ -27,7 +30,8 @@ const MovieCard = ({ movies }) => {
                                     <td>{movie.Released}</td>
                                 </tr>
                             </tbody>
-                        </table>
+                            </table>
+                            <h2 className="movie-title">{movie.Title}</h2>
                             <img onError={(error) => {
                                 error.target.src=`http://localhost:3000/dist/${imageNotFound}`
                                 // error = null

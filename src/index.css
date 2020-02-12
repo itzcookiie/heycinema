@@ -1,0 +1,42 @@
+:root {
+    --primary: #7FAAE4;
+    --secondary: #834DB7;
+    --tertiary: #34283F;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: var(--secondary)
+}
+
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: var(--secondary);
+    background: var(--tertiary)
+}
+
+p {
+    margin: 0
+}
+
+.table-header {
+    color: var(--primary)
+}
+
+.movie-name {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+}

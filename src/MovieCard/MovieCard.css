@@ -1,0 +1,36 @@
+.movie-cards {
+    display: flex;
+    padding: 10px;
+}
+
+.movie-card-container {
+    background: var(--tertiary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    flex: 1 0 300px;
+}
+
+.movie-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--secondary)
+}
+
+table,
+th,
+td {
+    min-height: 175px;
+    border: 1px solid white;
+}
+
+.table-body {
+    color: var(--secondary)
+}
+
+img {
+    width: 100%;
+}

@@ -43,7 +43,8 @@ export const searchMovie = event => (dispatch, getState) => {
                     payload: {
                         moviesLoading: false,
                         moviesLoaded: true,
-                        relatedMovies
+                        relatedMovies,
+                        errorLoading: false
                     }
                  })
             })
